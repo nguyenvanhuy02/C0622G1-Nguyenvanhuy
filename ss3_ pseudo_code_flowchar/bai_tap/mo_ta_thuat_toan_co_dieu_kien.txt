@@ -1,0 +1,17 @@
+BEGIN
+    INPUT score
+    IF(score>75 OR score == 75)
+          DISPLAY "LOAI A"
+    END IF
+    ELSE IF(score>60 OR score == 60)
+        DISPLAY "LOAI B"
+    END IF
+    ELSE IF(score>45 OR score == 60)
+        DISPLAY"LOAI C"
+    END IF ELSE IF(score>35 OR score == 35)
+        DISPLAY"LOAI D"
+    END IF
+    ELSE
+        DISPLAY"LOAI E"
+    END IF
+END
