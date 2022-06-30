@@ -1,0 +1,7 @@
+Begin
+   Input Toan = A
+         Ly   = B
+         Hoa  = C
+   Average (A+B+C)/3
+   Display average
+End.

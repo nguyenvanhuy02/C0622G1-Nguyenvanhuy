@@ -1,0 +1,8 @@
+Begin
+    Input dola->A
+          vnđ ->B
+          $1=23000vnđ->C
+    If A chuyen cho B
+       B=A.C
+    Display B
+End.

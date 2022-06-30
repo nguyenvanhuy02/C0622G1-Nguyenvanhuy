@@ -1,0 +1,15 @@
+Begin
+    Input A 
+          B
+          C
+    If A>B and A>C
+    Display "A<-Max"
+    End if
+else
+    If B<>C
+    Display "B<-Max"
+    End if
+else
+    Display "C<-Max"
+    end if
+End.
