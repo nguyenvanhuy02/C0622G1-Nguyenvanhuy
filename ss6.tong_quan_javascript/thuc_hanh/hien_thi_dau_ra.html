@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--&lt;!&ndash;           Hiển thị kết quả bằng alert&ndash;&gt;-->
+    <button type="button" onclick="shovMessage()">Click me</button>
+    <script>
+        function shovMessage() {
+            alert('Xin Chào');
+        }
+    </script>
+<!--                Hiển thị  kết quả bằng sử dụng thẻ html-->
+    <div id="message"></div>
+    <button type="button" onclick="showMessage()">Click me</button>
+        <script>
+            function showMessage() {
+                document.getElementById('message').innerHTML = 'Xin chào';
+            }
+        </script>
+<!--                    Hiển thị kết quả bằng documet.vrite-->
+    <button type="button" onclick="shoeMessage()">Click me</button>
+        <script>
+            function shoeMessage() {
+                document.write('Xin chào');
+            }
+        </script>
+<!--                        Hiển thị kết quả bằng console.log-->
+    <button type="button" onclick="shoeMessage()">Click me</button>
+<script>
+    function shoeMessage() {
+        console.log('xin chao');
+    }
+</script>
+</body>
+</html>
