@@ -5,9 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-    <button onclick="alert('hello')">click me</button>
+    <h1>Caculator</h1>
+    <input type="text" id="number1">
+    <input type="text" id="number2">
+    <button onclick="thuchienpheptinhcong()">Addition(+)</button>
+    <button onclick="thuchienpheptinhtru()">subtraction(-)</button>
+    <button onclick="thuchienpheptinhnhan()">Multiplication(*)</button>
+    <button onclick="thuchienpheptinhchia()">Division(/)</button>
+    <p id="Result"></p>
     <script>
-
+        function thuchienpheptinhcong(){
+            let number1 = parseInt()
+            let number2 = parseInt(document.getElementById("number2").value);
+            let Result = number1 + number2;
+            document.getElementById("Result").innerHTML = Result;
+        }
     </script>
 </body>
 </html>
