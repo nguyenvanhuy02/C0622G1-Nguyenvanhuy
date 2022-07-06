@@ -6,36 +6,36 @@
 </head>
 <body>
 <h1>Caculator</h1>
-    <input type="text" id="number1">
-    <input type="text" id="number2"> <br> <br>
-    <button onclick="thuchienphepcong()">Addition(+)</button>
-    <button onclick="thuchienpheptru()">Subtraction(-)</button>
-    <button onclick="thuchienphepnhan()">Multiplication(*)</button>
-    <button onclick="thuchienphepchia()">Division(/)</button>
+    <input type="text" id="numBer1">
+    <input type="text" id="numBer2"> <br> <br>
+    <button onclick="thucHienPhepCong()">Addition(+)</button>
+    <button onclick="thucHienPhepTru()">Subtraction(-)</button>
+    <button onclick="thucHienPhepNhan()">Multiplication(*)</button>
+    <button onclick="thucHienPhepChia()">Division(/)</button>
     <p id="Result"></p>
 <script>
-    function thuchienphepcong() {
-        let number1 = parseInt(document.getElementById("number1").value);
-        let number2 = parseInt(document.getElementById("number2").value);
-        let Result = number1 + number2;
+    function thucHienPhepCong() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let Result = numBer1 + numBer2;
         document.getElementById("Result").innerHTML = Result;
     }
-    function thuchienpheptru() {
-        let number1 = parseInt(document.getElementById("number1").value);
-        let number2 = parseInt(document.getElementById("number2").value);
-        let Result = number1 - number2;
+    function thucHienPhepTru() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let Result = numBer1 - numBer2;
         document.getElementById("Result").innerHTML = Result;
     }
-    function thuchienphepnhan() {
-        let number1 = parseInt(document.getElementById("number1").value);
-        let number2 = parseInt(document.getElementById("number2").value);
-        let Result = number1 * number2;
+    function thucHienPhepNhan() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let Result = numBer1 * numBer2;
         document.getElementById("Result").innerHTML = Result;
     }
-    function thuchienphepchia() {
-        let number1 = parseInt(document.getElementById("number1").value);
-        let number2 = parseInt(document.getElementById("number2").value);
-        let Result = number1 / number2;
+    function thucHienPhepChia() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let Result = numBer1 / numBer2;
         document.getElementById("Result").innerHTML = Result;
     }
 </script>
