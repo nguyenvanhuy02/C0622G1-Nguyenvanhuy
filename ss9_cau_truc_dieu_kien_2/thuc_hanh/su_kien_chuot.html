@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <img id="anh" src="https://static.tin.moi/uploads/news/photo/8w/8wP/8wPDPqFa2C-800x916.png" style="width: 25%">
+    <p>Click button below to move the image to right</p>
+    <button onclick="moveRight()">Click me</button>
+
+    <script>
+        let img0 = null;
+        img0 = document.getElementById('anh');
+        function innit() {
+            img0 = document.getElementById('anh');
+            img0.style.position = 'relative';
+            img0.style.left = '0px';
+        }
+        function moveRight() {
+
+            img0.style.left = parseInt(img0.style.left) + 10 + 'px';
+        }
+        window.onload = innit();
+    </script>
+</body>
+</html>

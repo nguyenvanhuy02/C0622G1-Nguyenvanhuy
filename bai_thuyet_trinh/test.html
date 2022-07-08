@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta>
+    <title>Ky anh an cut hong?</title>
 </head>
 <body>
-    <h1>Caculator</h1>
-    <input type="text" id="number1">
-    <input type="text" id="number2">
-    <button onclick="thuchienpheptinhcong()">Addition(+)</button>
-    <button onclick="thuchienpheptinhtru()">subtraction(-)</button>
-    <button onclick="thuchienpheptinhnhan()">Multiplication(*)</button>
-    <button onclick="thuchienpheptinhchia()">Division(/)</button>
-    <p id="Result"></p>
-    <script>
-        function thuchienpheptinhcong(){
-            let number1 = parseInt()
-            let number2 = parseInt(document.getElementById("number2").value);
-            let Result = number1 + number2;
-            document.getElementById("Result").innerHTML = Result;
-        }
-    </script>
+<div id="content">
+    <h2 id="title">Ky Anh an Cut Hong?</h2>
+    <button type="button" id="yes" onclick="clickYes();">Co</button>
+    <button type="button" id="no" class="no" onmouseover="mouseHover();" style="position: absolute;">Khong</button>
+</div>
+<script>
+    function mouseHover() {
+        let a = document.getElementById('no');
+        let x = Math.floor(Math.random() * 500) + 1;
+        let y = Math.floor(Math.random() * 500) + 1;
+        a.style.left = x + "px";
+        a.style.top = y + "px";
+    }
+
+    function clickYes() {
+        alert("Ngon hong hihi ?");
+    }
+</script>
 </body>
 </html>
