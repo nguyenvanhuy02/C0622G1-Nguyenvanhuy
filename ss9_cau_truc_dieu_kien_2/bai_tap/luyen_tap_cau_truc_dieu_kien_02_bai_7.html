@@ -8,7 +8,15 @@
 <script>
     let a = parseFloat(prompt("Nhập số a là ",""));
     let b = parseFloat(prompt("Nhập số b là ",""));
-    let c = parseFloat(prompt("Nhập"))
+    let c = parseFloat(prompt("Nhập số c là ",""));
+    let denTa = (b*b) - 4*a*c;
+    if (denTa<0){
+        alert("Phương trình vô nghiệm")
+    }else if (denTa==0){
+        alert("Phương trình có nghiệm kép x1=x2=")
+    }else if (denTa>0){
+        alert("Phương trình có 2 nghiệm phân biệt")
+    }
 </script>
 </body>
 </html>
