@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soCanNhap = +prompt("Cần bao nhiêu số là : ")
+    let stn = 0 ;
+    let sth = 1 ;
+    let stt ;
+    let soDem = 0 ;
+    while (true) {
+        stt = stn + sth;
+        document.write(stt + "<br>");
+        stn = sth;
+        sth = stt;
+        soDem += 1 ;
+        if (soDem == soCanNhap) {
+            break;
+        }
+    }
+</script>
+</body>
+</html>

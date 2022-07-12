@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stn = 0;
+    let sth = 1;
+    let stt;
+    let tong = 0;
+    for (let i = 0; i < 20; i++) {
+        stt = stn + sth;
+        stn = sth;
+        sth = stt;
+        tong += stt;
+
+
+    }
+    document.write(tong);
+</script>
+</body>
+</html>

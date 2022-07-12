@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stn = 0;
+    let sth = 1;
+    let stt;
+    for (let i = 0; i < 20; i++) {
+        stt = stn + sth;
+        document.write(stt + "<br>");
+        stn = sth;
+        sth = stt;
+
+    }
+</script>
+</body>
+</html>
