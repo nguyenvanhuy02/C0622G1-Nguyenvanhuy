@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [25, 5, 10, 32, 21, 60, 54, 1, 2, 3];
+    let max = number[0];
+    let tong = 0 ;
+    for (let i = 0; i < 10; i++) {
+        if (max < number[i]) {
+            max = number[i]
+        }
+    }
+    document.write('Số nguyên lớn nhất ' + max + "<br>");
+    for (let i = 0; i < 10; i++) {
+        max = number[i];
+        tong = tong + max;
+    }
+    document.write(tong)
+</script>
+</body>
+</html>

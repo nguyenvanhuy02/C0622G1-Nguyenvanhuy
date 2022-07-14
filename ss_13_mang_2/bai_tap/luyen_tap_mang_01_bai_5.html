@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let demSoAm = 0 ;
+    let nhapSo = prompt('Nhập chuỗi số ');
+    for (let i = 0; i < nhapSo.length - 1 ; i++) {
+        if (nhapSo[i] === '-'){
+            demSoAm++;
+        }
+    }
+    alert('Tống số nguyên âm trong chuỗi ' + demSoAm);
+</script>
+</body>
+</html>

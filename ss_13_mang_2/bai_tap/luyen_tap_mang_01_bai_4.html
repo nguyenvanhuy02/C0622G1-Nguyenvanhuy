@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let nhapSo = +prompt("Nhập tổng số cần nhập ");
+    for (let i = 0; i < nhapSo ; i++) {
+        mang[i] = +prompt('Nhập thứ tự số ' + i);
+    }
+    document.write("Các số ban đầu " + '['+mang +']' + '<br>' );
+    document.write('Các số đảo ngược' + '[' + mang.reverse() +']'); // reverse đảo ngược
+</script>
+</body>
+</html>

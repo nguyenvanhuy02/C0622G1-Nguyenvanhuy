@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapChuoi = prompt('Nhập mảng kí tự '); // chuỗi
+    nhapChuoi = nhapChuoi.split('') ;  // chuyển chuỗi về mảng .split
+    for (let i = 0; i < nhapChuoi.length ; i++) {
+        if (nhapChuoi[i] === '-'){
+            nhapChuoi.splice(i,1,'_');
+        }
+    }
+    document.write(nhapChuoi.join(''));
+</script>
+</body>
+</html>

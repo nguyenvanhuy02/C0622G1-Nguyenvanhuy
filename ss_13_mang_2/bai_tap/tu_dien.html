@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let eng = ["banana",'apple','hello'];
+    let vie = ['Chuối','Táo','Xin chào'];
+    let tuDien = prompt('Từ muốn tìm ');
+    if (eng.indexOf(tuDien) > -1) {
+        for (let i = 0; i < eng.length ; i++) {
+            if (tuDien === eng[i]){
+                alert('Kết quả ' + vie[i]);
+                break;
+            }
+        }
+    } else {
+        alert('Không có ')
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1 : Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau
+    let myColor = ["Red", "Green", "White", "Black"];
+    document.write(myColor.toString(""));
+    document.write("<br>")
+
+    // Bài 2 : Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn
+    let nguoiDungNhap =prompt();
+    nguoiDungNhap = nguoiDungNhap.split('');
+    for (let i = 0; i < nguoiDungNhap.length ; i++) {
+            let a = parseInt(nguoiDungNhap[i]);
+            let b = parseInt(nguoiDungNhap[i+1] );
+            if ( (a % 2 === 0 ) && (b % 2 === 0) ){
+                nguoiDungNhap.splice((i + 1), 0, '-');
+            }
+    }
+    document.write(nguoiDungNhap.join(''));
+
+    // Bài 3 : Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa
+    let fullName = prompt("Enter: ");
+    let result = '';
+    for(let word of fullName) {
+        if(word == word.toUpperCase()) {
+            result += word.toLowerCase(); //Chữ thường
+        } else{
+            result += word.toUpperCase(); // Chữ in hoa
+        }
+    }
+    document.write(fullName + '<br>');
+    document.write(result);
+</script>
+</body>
+</html>
