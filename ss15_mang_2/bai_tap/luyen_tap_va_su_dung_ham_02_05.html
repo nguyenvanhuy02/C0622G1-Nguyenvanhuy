@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyenTN = +prompt("Nhập số nguyên thứ 1 ");
+    let soNguyenTH = +prompt("Nhập số nguyên thứ 2 ");
+    let soNguyenTB = +prompt("Nhập số nguyên thứ 3 ");
+    function soNguyen(tN,tH,tB) {
+            if (tN < tH && tN < tB){
+                return tN ;                   // return trả về
+            }else if (tH < tN && tH < tB){
+                return tH ;
+            }else {
+                return tB ;
+            }
+    }
+    let min = soNguyen(soNguyenTH,soNguyenTN,soNguyenTB);
+    document.write(min);
+</script>
+</body>
+</html>

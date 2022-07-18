@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapNgoiSao= prompt("Nhập tên ngôi sao");
+    let tenNgoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let tenChomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function check(sao) {
+        let viTriNgoiSao = tenNgoiSao.indexOf(sao);
+        if (viTriNgoiSao > -1){
+            alert(tenChomSao[viTriNgoiSao]);
+        }else {
+            alert("Không tìm thấy ngôi sao")
+        }
+    }
+    check(nhapNgoiSao);
+</script>
+</body>
+</html>

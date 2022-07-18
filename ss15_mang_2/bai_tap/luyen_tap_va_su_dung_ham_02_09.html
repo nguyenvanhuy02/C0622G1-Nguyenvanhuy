@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let nhapKiTu = prompt("Nhập kí tự vào ");
+    mang.push(nhapKiTu);
+    mang = mang.join('');
+    mang = mang.split('');
+    function kiemTra(kyTu) {
+        let trung = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === kyTu) {
+                trung++;
+            }
+        }
+        return trung;
+    }
+
+    let kiemTraKiTu = prompt("Nhập một kí tự muốn tìm kiếm ");
+    if (kiemTra(kiemTraKiTu) > 0) {
+        document.write(kiemTra(kiemTraKiTu));
+    } else {
+        document.write("-1");
+    }
+
+</script>
+</body>
+</html>

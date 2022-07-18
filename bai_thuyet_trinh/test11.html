@@ -6,20 +6,18 @@
 </head>
 <body>
 <script>
-    let arrSoNguyen = [];
-    let index = 0;
-    for (let i = 0; i < 10 ; i++) {
-        arrSoNguyen[i] = +prompt("Nhập giá trị phần tử: ");
+    let nhapVao = [];
+    let khachHangNhap = +prompt("Khách hàng nhập số phần tử vào ");
+    for (let i = 0; i < khachHangNhap; i++) {
+        let phanTuKhachHangMuonNhap = prompt("Khách hàng nhập vào phần tử thứ " + (i+1));
+        nhapVao.push(phanTuKhachHangMuonNhap);
     }
-    let Max = arrSoNguyen[0];
-    for (let i = 0; i < 10; i++) {
-        if (arrSoNguyen[i] > Max) {
-            Max = arrSoNguyen[i];
-            index = i;
+    function daoNguoc(number) {
+        for (let i = number.length-1 ; i >=0 ; i--) {
+            document.write(number[i]);
         }
     }
-    document.write("Mảng số nguyên: ["+arrSoNguyen+"]"+"<br>"+"<br>")
-    document.write("Phần tử có giá trị lớn nhất trong mảng là "+Max+" "+"ở vị trí "+index);
+    daoNguoc(nhapVao);
 </script>
 </body>
 </html>

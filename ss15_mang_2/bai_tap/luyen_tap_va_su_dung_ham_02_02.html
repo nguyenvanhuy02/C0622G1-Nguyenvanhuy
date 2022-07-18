@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = +prompt("Nhập bán kính r : ")
+    function tinhDienTich(banKinh) {
+            let dienTich = banKinh*banKinh*3.14 ;
+            document.write("Diện thích hình tròn = " + dienTich);
+            document.write("<br>")
+    }
+    function tinhChuVi(banKinh) {
+            let chuVi = 2*banKinh*3.14;
+            document.write("Chu vi hình tron = " + chuVi);
+    }
+    tinhDienTich(r);
+    tinhChuVi(r);
+</script>
+</body>
+</html>

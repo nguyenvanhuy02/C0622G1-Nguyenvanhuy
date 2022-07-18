@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function troChoi(cauTraLoi) {
+        let traLoi = '';
+        if (cauTraLoi) {
+            traLoi = "Chúng ta sẽ chơi 1 ván nha ";
+        } else {
+            traLoi = "Vậy hẹn cậu lúc khác nha ";
+        }
+        return traLoi;
+    }
+
+    let choi = confirm("Chúng ta sẽ chơi game ?");
+    let cauTraLoi1 = troChoi(choi);
+    alert(cauTraLoi1);
+</script>
+</body>
+</html>
