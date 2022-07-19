@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(nhietDo) {
+            this.nhieDo = nhietDo;
+        }
+
+        transferCtoF () {
+            return this.nhieDo = this.nhieDo * (9 / 5 + 32);
+        }
+
+        transferCtoK () {
+            return this.nhieDo = this.nhieDo + 273.15;
+        }
+    }
+
+    let temp = new Temperature(25);
+    let result1 = temp.transferCtoF();
+    let result2 = temp.transferCtoK();
+    document.write("Độ C chuyển sang độ F : " + result1 + "<br>");
+    document.write("Độc C chuyển sang độ Kevin: " + result2 + "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        setHeight(height) {
+            this.height = height;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        getHeight() {
+            return this.height;
+        }
+
+        getArea() {
+            return this.height * this.width;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+    }
+
+    let hcn = new Rectangle(200, 100);
+    let hcn1 = new Rectangle();
+    hcn1.setWidth(300);
+    hcn1.setHeight(150);
+    document.write('Chiều rộng hình chữ nhật = ' + hcn.getHeight()+'<br>');
+    document.write('Chiều rộng hình chữ nhât = ' + hcn.getWidth()+'<br>');
+    document.write('Diện tích hình chữ nhật = ' + hcn.getArea()+'<br>');
+    document.write('Chu vi hình chữ nhật = ' + hcn.getPerimeter());
+</script>
+</body>
+</html>
