@@ -7,44 +7,44 @@
 <body>
 <script>
     // Cách 1 :
-    // let nhapVao = [];
-    // let khachHangNhap = +prompt("Khách hàng nhập số phần tử vào ");
-    // for (let i = 0; i < khachHangNhap; i++) {
-    //     let phanTuKhachHangMuonNhap = prompt("Khách hàng nhập vào phần tử thứ " + (i+1));
-    //     nhapVao.push(phanTuKhachHangMuonNhap);
-    // }
-    // function doiCho(nhapVao) {
-    //     let tamThoi;
-    //     if (nhapVao.length % 2 === 0) {
-    //         for (let i = 0; i < nhapVao.length/2 ; i++) {
-    //             tamThoi = nhapVao[i];
-    //             nhapVao[i] = nhapVao[nhapVao.length - (i+1)];
-    //             nhapVao[nhapVao.length - (i+1)] = tamThoi;
-    //         }
-    //     } else {
-    //         for (let i = 0; i < (nhapVao.length-1)/2 ; i++) {
-    //             tamThoi = nhapVao[i];
-    //             nhapVao[i] = nhapVao[nhapVao.length - (i+1)];
-    //             nhapVao[nhapVao.length - (i+1)] = tamThoi;
-    //         }
-    //     }
-    //     return nhapVao;
-    // }
-    // let result = doiCho(nhapVao);
-    // document.write(result);
-    // Cách 2 :
     let nhapVao = [];
     let khachHangNhap = +prompt("Khách hàng nhập số phần tử vào ");
     for (let i = 0; i < khachHangNhap; i++) {
         let phanTuKhachHangMuonNhap = prompt("Khách hàng nhập vào phần tử thứ " + (i+1));
         nhapVao.push(phanTuKhachHangMuonNhap);
     }
-    function daoNguoc(number) {
-        for (let i = number.length-1 ; i >=0 ; i--) {
-            document.write(number[i]);
+    function doiCho(nhapVao) {
+        let tamThoi;
+        if (nhapVao.length % 2 === 0) {
+            for (let i = 0; i < nhapVao.length/2 ; i++) {
+                tamThoi = nhapVao[i];
+                nhapVao[i] = nhapVao[nhapVao.length - (i+1)];
+                nhapVao[nhapVao.length - (i+1)] = tamThoi;
+            }
+        } else {
+            for (let i = 0; i < (nhapVao.length-1)/2 ; i++) {
+                tamThoi = nhapVao[i];
+                nhapVao[i] = nhapVao[nhapVao.length - (i+1)];
+                nhapVao[nhapVao.length - (i+1)] = tamThoi;
+            }
         }
+        return nhapVao;
     }
-    daoNguoc(nhapVao);
+    let result = doiCho(nhapVao);
+    document.write(result);
+    // // Cách 2 :
+    // let nhapVao = [];
+    // let khachHangNhap = +prompt("Khách hàng nhập số phần tử vào ");
+    // for (let i = 0; i < khachHangNhap; i++) {
+    //     let phanTuKhachHangMuonNhap = prompt("Khách hàng nhập vào phần tử thứ " + (i+1));
+    //     nhapVao.push(phanTuKhachHangMuonNhap);
+    // }
+    // function daoNguoc(number) {
+    //     for (let i = number.length-1 ; i >=0 ; i--) {
+    //         document.write(number[i]);
+    //     }
+    // }
+    // daoNguoc(nhapVao);
 
 </script>
 </body>
