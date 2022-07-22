@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
+        Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.
+    </title>
+</head>
+<body>
+<script>
+    let so = ['0','1','2','3','4','5','6','7','8','9'];
+    let chuSo = ['Không','Một','Hai','Ba','Bốn','Năm','Sáu','Bảy','Tám','Chín'];
+    let nhapMotSo = prompt("Nhập một số từ bàn phím ");
+    for (let i = 0; i < nhapMotSo.length ; i++) {
+        for (let j = 0; j < so.length ; j++) {
+            if (nhapMotSo[i] === so[j]){
+                document.write(chuSo[j]+ ' ');
+            }
+        }
+    }
+    // let nhapSoVao = prompt('Nhập số vào ');
+    // for (let i = 0; i < nhapSoVao.length ; i++) {
+    //     switch (nhapSoVao[i]) {
+    //         case '0' :
+    //             document.write("Không");
+    //             break;
+    //         case '1' :
+    //             document.write("Một");
+    //             break;
+    //         case '2' :
+    //             document.write("Hai");
+    //             break;
+    //     }
+    // }
+
+</script>
+</body>
+</html>

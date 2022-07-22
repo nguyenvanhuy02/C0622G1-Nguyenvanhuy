@@ -6,18 +6,24 @@
 </head>
 <body>
 <script>
-    let nhapVao = [];
-    let khachHangNhap = +prompt("Khách hàng nhập số phần tử vào ");
-    for (let i = 0; i < khachHangNhap; i++) {
-        let phanTuKhachHangMuonNhap = prompt("Khách hàng nhập vào phần tử thứ " + (i+1));
-        nhapVao.push(phanTuKhachHangMuonNhap);
-    }
-    function daoNguoc(number) {
-        for (let i = number.length-1 ; i >=0 ; i--) {
-            document.write(number[i]);
+    let array = [];
+    let number;
+
+    do {
+        number = parseInt(prompt("nhập số nguyên"));
+        if (!(number > 0 && number % 1 === 0 )) {
+            alert("nhap lai")
+        }
+    } while (!(number > 0 && number % 1 === 0))
+    {
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                array.push(i);
+            }
         }
     }
-    daoNguoc(nhapVao);
+    document.write("Ước của số: " + number + " là: " + array);
+
 </script>
 </body>
 </html>
