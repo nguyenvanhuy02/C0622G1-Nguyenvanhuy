@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPhanSo(arr1, arr2) {
+        let arr3 = [];
+        for (let i = 0; i < arr1.length; i++) {
+            let b = arr1[i] / arr2[i];
+            arr3.push(b);
+        }
+        console.log(arr3);
+        let max = arr3[0];
+        for (let i = 1; i < arr3.length; i++) {
+            if (arr3[i] > max) {
+                max = arr3[i];
+            }
+        }
+        document.write('Phân số lớn nhất là: ' + arr1[arr3.indexOf(max)] + '/' + arr2[arr3.indexOf(max)] +
+            ' Chỉ số là: ' + arr3.indexOf(max));
+
+    }
+
+    let array1 = [2, 6, 8, 4, 3];
+    let array2 = [7, 4, 2, 9, 1];
+    checkPhanSo(array1, array2);
+</script>
+</body>
+</html>

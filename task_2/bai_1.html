@@ -13,19 +13,21 @@
 <body>
 <script>
     let soTienLuong = +prompt('Số tiền lương nhân viên nhận được ');
+    let soTienThue;
+    let soTienLuongRong;
     if (soTienLuong >= 15000000) {
-        let soTienThue = (soTienLuong * 0.2)
-        let soTienLuongRong = soTienLuong - soTienThue;
+        soTienThue = (soTienLuong * 0.2)
+        soTienLuongRong = soTienLuong - soTienThue;
         document.write("Số tiền thuế phải nộp : " + soTienThue + '<br>');
         document.write('Lương ròng : ' + soTienLuongRong);
     } else if (soTienLuong > 7000000 && soTienLuong < 15000000) {
-        let soTienThue = (soTienLuong * 0.1);
-        let soTienLuongRong = soTienLuong - soTienThue;
+        soTienThue = (soTienLuong * 0.1);
+        soTienLuongRong = soTienLuong - soTienThue;
         document.write('Số thuế phải nộp là : ' + soTienThue+ '<br>');
         document.write('lương ròng : '+ soTienLuongRong)
     } else {
-        let soTienThue = (soTienLuong * 0.05);
-        let soTienLuongRong = soTienLuong - soTienThue;
+        soTienThue = (soTienLuong * 0.05);
+        soTienLuongRong = soTienLuong - soTienThue;
         document.write('Số thuế phải nộp là : ' + soTienThue+ '<br>');
         document.write('Lương ròng : ' + soTienLuongRong);
     }

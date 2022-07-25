@@ -20,7 +20,28 @@
 </head>
 <body>
 <script>
-
+    let arr = ['cafe', 'cam vắt', 'nước ép cà rốt', 'nước ép cà chua', 'nước lọc', 'nước dừa', 'thoát gọi món'];
+    let donGia = [12000, 20000, 25000, 25000, 10000, 30000];
+    let tongTien = 0;
+    let goiMon;
+    let soLuong;
+    do {
+        goiMon = +prompt(
+            "Gọi món: \n" +
+            "1. Cafe\n" +
+            "2. Cam vắt\n " +
+            "3. Nước ép cà rốt\n " +
+            "4. Nước ép cà chua\n " +
+            "5. Nước lọc\n " +
+            "6. Nước dừa\n " +
+            "7. Thoát gọi món ");
+        if (goiMon === 7) {
+            break;
+        }
+        soLuong = +prompt(arr[goiMon - 1] + " có giá là: " + donGia[goiMon - 1]);
+        tongTien += (soLuong * donGia[goiMon - 1]);
+    } while (goiMon !== 7);
+    document.write('Tổng tiền cần thanh toán là: ' + tongTien);
 </script>
 </body>
 </html>

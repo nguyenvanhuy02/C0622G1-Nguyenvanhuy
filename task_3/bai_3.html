@@ -11,7 +11,21 @@
 </head>
 <body>
 <script>
-
+    let number1 = [5,2,5];
+    let number2 = [6,3,4];
+    let phanSo = [];
+    for (let i = 0; i < number1.length ; i++) {
+        let phanSo1 = number1[i] / number2[i];
+        phanSo.push(phanSo1);
+    }
+    let max = phanSo[0];
+    for (let i = 0; i < phanSo.length ; i++) {
+        if (phanSo[i]>max){
+            max = phanSo[i];
+        }
+    }
+    document.write('Phân số lớn nhất là: ' + number1[phanSo.indexOf(max)] + '/' + number2[phanSo.indexOf(max)] +
+        ' Chỉ số là: ' + phanSo.indexOf(max));
 </script>
 </body>
 </html>
