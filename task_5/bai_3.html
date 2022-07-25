@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+    </title>
+</head>
+<body>
+<script>
+    // function maxMin(mang) {
+    //     let max = mang[0];
+    //     let min = mang[0];
+    //     for (let i = 1; i < mang.length ; i++) {
+    //         if (mang[i]>max){
+    //             max = mang[i];
+    //         }
+    //         if (mang[i]< min){
+    //             min = mang[i]
+    //         }
+    //     }
+    //     return [max,min];
+    // }
+    // function maxMinTwoArr(towArr) {
+    //     let max = Number.MIN_VALUE;
+    //     let min = Number.MAX_VALUE;
+    //     for (let i = 0; i < towArr.length ; i++) {
+    //         if (max < maxMin(towArr[i])[0]){
+    //             max = maxMin(towArr[i])[0];
+    //         }
+    //         if (min > maxMin(towArr[i])[1]){
+    //             min = maxMin(towArr[i])[1];
+    //         }
+    //     }
+    //     return [max,min]
+    // }
+
+
+
+
+
+    function maxMin(mang) {
+        let max = mang[0][0];
+        let min = mang[0][0];
+        for (let i = 0; i <mang.length ; i++) {
+            for (let j = 0; j <mang[i].length ; j++) {
+                if (mang[i][j] >max){
+                    max = mang[i][j];
+                }
+                if (mang[i][j] < min){
+                    min = mang[i][j];
+                }
+            }
+        }
+        return [max,min];
+    }
+</script>
+</body>
+</html>

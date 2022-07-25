@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.
+    </title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        if (number < 2){
+            return false;
+        }
+        for (let i = 2; i < number ; i++) {
+            if (number % i == 0){
+                return false
+            }
+        }return true
+    }
+
+    function lietKe(mang) {
+        let cacSoNguyenTo = [];
+        for (let i = 0; i < mang.length ; i++) {
+            for (let j = 0; j < mang[i].length ; j++) {
+                if (isPrime(mang[i][j])){
+                    cacSoNguyenTo.push(mang[i][j]);
+                }
+            }
+        }
+        return cacSoNguyenTo.length ;
+    }
+    document.write(lietKe([
+        [2,3,4],
+        [5,9,7]
+    ]))
+</script>
+</body>
+</html>

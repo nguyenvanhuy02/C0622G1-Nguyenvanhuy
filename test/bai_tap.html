@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(chuoiKyTu) {
+        let mang = chuoiKyTu.split(" ");
+        let ketQua =[];
+        let ketQuaKhac = "";
+        if (mang.length == 1){
+            return alert("Chuỗi này một từ không cần viết tắt : " + mang )
+        }else {
+            for (let i = 0; i < mang.length; i++) {
+                if (mang[i].length > 1) {
+                    // alert(mang[i].charAt(0));
+                    ketQua.push(mang[i].charAt(0));
+                }
+            }
+            for (let i = 0; i < ketQua.length; i++) {
+               ketQuaKhac+=ketQua[i].toUpperCase();
+            }
+            return ketQuaKhac
+        }
+    }
+
+    document.write(kiemTra('Nguyen van huy'));
+</script>
+</body>
+</html>
