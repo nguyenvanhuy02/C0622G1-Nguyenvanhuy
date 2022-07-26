@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Số hàng  ');
+    let m = +prompt("Số cột" );
+    let mang = new Array(m) ;
+    for (let i = 0; i < n; i++) {
+        mang[i]= new Array(n);
+        for (let j = 0; j < mang[i].length ; j++) {
+            mang[i][j]= +prompt('Nhập phần tử của mảng con ');
+        }
+    }
+    for (let i = 0; i < mang.length; i++) {
+        for (let j = 0; j <mang[i].length; j++) {
+            document.write(mang[i][j])
+        }
+        document.write('<br>')
+    }
+
+    let sum =0 ;
+    for (let i = 0; i < mang.length ; i++) {
+        for (let j = 0; j <mang[i].length ; j++) {
+            if (j % 2 == 0){
+                sum+= mang[i][j];
+            }
+        }
+    }
+    document.write('Trung bình cộng các phần tử ở cột chẵn ' + sum)
+
+
+
+
+
+</script>
+</body>
+</html>

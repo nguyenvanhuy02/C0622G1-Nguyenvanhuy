@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input type="text" placeholder="New Product">
+<button onclick="them()">Add</button>
+<h1>Display All Product</h1>
+<table border="1">
+    <tr>
+        <th>Product Name</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Sony Xperia</td>
+        <td><button onclick="edit()">Edit</button></td>
+        <td><button onclick="xoa()">Delete</button></td>
+    </tr>
+
+</table>
+<script>
+    class dienThoai{
+        constructor(name) {
+            this.name = name;
+        }
+        getName(){
+            return this
+        }
+    }
+</script>
+</body>
+</html>

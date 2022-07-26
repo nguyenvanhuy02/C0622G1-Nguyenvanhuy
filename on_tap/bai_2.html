@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(chuoi) {
+        let inHoa = [];
+        let inThuong = [];
+        for (let i = 0; i < chuoi.length ; i++) {
+            if (chuoi[i]===chuoi[i].toUpperCase()){
+                inHoa.push(chuoi[i]);
+            }else {
+                inThuong.push(chuoi[i])
+            }
+        }
+        return [inHoa.length,inThuong.length];
+    }
+    document.write(kiemTra('HellOCodeym'));
+</script>
+</body>
+</html>

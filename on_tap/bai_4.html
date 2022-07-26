@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+<button onclick="themVao()">Thêm vào</button>
+<script>
+    class MayTinh {
+        constructor(maMay,tenMay,tenHangSX,giaBan) {
+            this.maMay = maMay;
+            this.tenMay = tenMay;
+            this.tenHangSX = tenHangSX;
+            this.giaBan = giaBan;
+        }
+        setMaMay(maMay){
+            this.maMay = maMay;
+        }
+        setTenMay(tenMay){
+            this.tenMay = tenMay;
+        }
+        setTenHangSX(tenHangSX){
+            this.tenHangSX= tenHangSX;
+        }
+        setGiaBan(giaBan){
+            this.giaBan = giaBan;
+        }
+        getMaMay(){
+            return this.maMay;
+        }
+        getTenMay(){
+            return this.tenMay;
+        }
+        getTenHangSX(){
+            return this.tenHangSX;
+        }
+        getGiaBan(){
+            return this.giaBan;
+        }
+    }
+    let mayTinh1 = new MayTinh('D1','Dell','Hoa Kỳ',20000000);
+    let mayTinh2 = new MayTinh('D2','ASUS','Hoa kỳ 1',21000000);
+    let mayTinh3 = new MayTinh('D3','hp','Hoa Kỳ 2 ',22000000);
+    let danhSachMayTinh = [mayTinh1,mayTinh2,mayTinh3];
+    display(danhSachMayTinh);
+
+
+    function display(danhSach) {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Mã Máy</th>\n' +
+            '        <th>Tên Máy</th>\n' +
+            '        <th>Tên hãng sản xuất</th>\n' +
+            '        <th>Giá bán </th>\n' +
+            '    </tr>'
+        for (let i = 0; i < danhSach.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td> '+ danhSach[i].getMaMay() +' </td>\n' +
+                '        <td> '+danhSach[i].getTenMay()+' </td>\n' +
+                '        <td> '+danhSach[i].getTenHangSX()+' </td>\n' +
+                '        <td> '+danhSach[i].getGiaBan()+' </td>\n' +
+                '    </tr>'
+        }
+        tableString += '</table>'
+        document.getElementById('display').innerHTML = tableString;
+    }
+    
+    
+    
+    function themVao() {
+        let maMay = prompt('Nhập mã máy ');
+        let tenMay = prompt('Nhập mã máy ');
+        let tenHangSX = prompt("Nhập tên hãng sản xuất ");
+        let giaBan = +prompt("nhập giá bán ");
+        let mayTinhMoi= new MayTinh(maMay,tenMay,tenHangSX,giaBan);
+        danhSachMayTinh.push(mayTinhMoi);
+        display(danhSachMayTinh);
+    }
+</script>
+</body>
+</html>

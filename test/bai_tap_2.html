@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function inHoa(chuoi) {
+    //     let hoa = ['A','B','C','D','E','F'];
+    //     let mang = chuoi.split('');
+    //     let chuInHoa = [];
+    //     for (let i = 0; i < mang.length ; i++) {
+    //         for (let j = 0; j < hoa.length ; j++) {
+    //             if (mang[i] == hoa[j]){
+    //                 chuInHoa.push(mang[i]);
+    //             }
+    //         }
+    //     }
+    //     return chuInHoa;
+    // }
+    // document.write(inHoa('AbcDE'));
+
+
+
+    function inHoa(chuoi) {
+        let chuInHoa = [];
+        for (let i = 0; i < chuoi.length ; i++) {
+            if (chuoi[i] == chuoi[i].toUpperCase()){
+                chuInHoa.push(chuoi[i]);
+            }
+        }
+        return chuInHoa;
+    }
+    document.write(inHoa('AbcDE'));
+
+</script>
+</body>
+</html>
