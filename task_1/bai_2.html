@@ -6,20 +6,37 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= i; j++) {
-            if (i == 5) {
-                document.write('*');
-            } else {
-                if (j == 1 || j == i) {
-                    document.write('*');
-                } else {
-                    document.write('&nbsp&nbsp');
-                }
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= i; j++) {
+    //         if (i == 5) {
+    //             document.write('*');
+    //         } else {
+    //             if (j == 1 || j == i) {
+    //                 document.write('*');
+    //             } else {
+    //                 document.write('&nbsp&nbsp');
+    //             }
+    //         }
+    //     }
+    //     document.write('<br>');
+    // }
+    let height = +prompt("Nhập chiều cao ");
+    let shape = '';
+    for (let i = 1; i <= height ; i++) {
+        for (let j = 1; j <= height ; j++) {
+            if (i=== height){
+                shape+='*';
+            }
+            else if (j===1 || j=== i){
+                shape +='*';
+            }
+            else {
+                shape += '&nbsp&nbsp';
             }
         }
-        document.write('<br>');
+        shape += '<br>';
     }
+    document.write(shape);
 </script>
 </body>
 </html>

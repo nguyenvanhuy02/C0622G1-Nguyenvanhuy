@@ -6,15 +6,28 @@
 </head>
 <body>
 <script>
-    for(let i = 1; i <= 5; i++) {
-        for(let j = 1; j <= i * -1 + 5; j++) {
-            document.write('&nbsp&nbsp');
+    // for(let i = 1; i <= 5; i++) {
+    //     for(let j = 1; j <= i * -1 + 5; j++) {
+    //         document.write('&nbsp&nbsp');
+    //     }
+    //     for(let j = 1; j <= i * 2 -1; j++) {
+    //         document.write('*');
+    //     }
+    //     document.write('<br>');
+    // }
+    let height = +prompt('Nhập chiều cao ');
+    let width = height*2 - 1 ;
+    let shape = '';
+    for (let i = 1; i <= height ; i++) {
+        for (let j = 0; j < width/2 - i ; j++) {
+            shape += '&nbsp&nbsp';
         }
-        for(let j = 1; j <= i * 2 -1; j++) {
-            document.write('*');
+        for (let k = 0; k < i * 2 -1 ; k++) {
+            shape += '*';
         }
-        document.write('<br>');
+        shape += '<br>'
     }
+    document.write(shape);
 </script>
 </body>
 </html>
